@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/mac_address"/>
+        <Button
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:id="@+id/set_mac"
+            android:text="Задать"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="Нажмите кнопку, чтобы отправить сигнал на Arduino"
+        android:layout_marginVertical="10dp"
+        android:textSize="16sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/on_btn"
+        android:text="Остановить станок"
+        android:textSize="16sp"
+        android:layout_marginVertical="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/off_btn"
+        android:textSize="16sp"
+        android:text="Отменить остановку"
+        android:layout_marginVertical="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/disconnect_btn"
+        android:textSize="16sp"
+        android:text="Отсоединиться от Arduino"
+        android:layout_marginVertical="10dp"/>
+
+</LinearLayout>
